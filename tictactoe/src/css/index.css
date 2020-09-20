@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gameZone {
+width: 600px;
+height: 600px;
+background: lightblue;
+display: grid;
+grid-template-rows: repeat(3, 1fr);
+
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.row1,.row2 {
+    border-bottom: 5px solid black;
+} 
+.row2, .row3 {
+    border-top: 5px solid black;
+    
+}
+.cell {
+
+}
+
+.cell1, .cell4, .cell7, .cell2, .cell5, .cell8 {
+    border-right: 5px solid black;
+}
+.cell2, .cell5, .cell8, .cell3, .cell6, .cell9 {
+    border-left: 5px solid black;
+}
+
+.buttonPlay{
+    margin-top: 50px;
+}
