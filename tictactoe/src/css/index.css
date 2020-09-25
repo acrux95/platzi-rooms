@@ -4,11 +4,12 @@ body {
     justify-content: center;
 }
 .gameZone {
-width: 600px;
-height: 600px;
-background: lightblue;
+width: 700px;
+height: 700px;
+background: yellow;
 display: grid;
 grid-template-rows: repeat(3, 1fr);
+box-sizing: border-box;
 
 }
 
@@ -16,6 +17,10 @@ grid-template-rows: repeat(3, 1fr);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+/* .row:not(last-child) {
+
+} */
+
 .row1,.row2 {
     border-bottom: 5px solid black;
 } 
@@ -24,7 +29,12 @@ grid-template-rows: repeat(3, 1fr);
     
 }
 .cell {
-
+font-size: 180px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: red;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .cell1, .cell4, .cell7, .cell2, .cell5, .cell8 {
@@ -37,3 +47,7 @@ grid-template-rows: repeat(3, 1fr);
 .buttonPlay{
     margin-top: 50px;
 }
+
+.hide {
+        display: none;
+      }
